@@ -1,0 +1,277 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: rgb(102, 158, 236);
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    height: 3rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.btn:hover{
+    background: rgb(4, 33, 179);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aqua;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 9%;
+
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: blue;
+    text-transform: uppercase;
+}
+header .logo span{
+    color: red;
+    font-size: 4rem;
+    justify-content: start;
+    text-align: start;
+}
+header .navbar a{
+    color:white;
+    font-size: 2rem;
+    margin: .8rem;
+
+}
+header .navbar a:hover{
+    color: blue;
+}
+header .icons i{
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    margin-right: 2rem;
+
+}
+header .icons input{
+    height: 3rem;
+    border-radius: 4rem;
+    
+    padding: 1rem;
+    text-transform: none;
+    color: blue;
+    font-size: 1.7rem;
+    
+}
+header .icons i:hover{
+    color: blue;
+
+}
+header .search-bar-container{
+    position: absolute;
+    top:100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background-color: aquamarine;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    align-items: center;
+    z-index: 1001;
+    
+}
+
+/*
+.login-form-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.login-form-container form{
+   margin: 2rem;
+   padding: 1.5rem 2rem;
+   border-radius: 1rem;
+   background: rgb(152, 254, 252);
+   width: 50rem;
+  
+}
+.login-form-container form h3{
+    font-size: 3rem;
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+    letter-spacing: 1rem;
+
+}
+.login-form-container form .box{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.7rem;
+    color: black;
+    margin: 1rem 0;
+    border: .1rem solid black;
+    text-transform: none;
+}
+.login-form-container form .box:focus{
+    border-color: blue;
+
+}
+.login-form-container form #remember{
+    margin: 2rem 0;
+}
+.login-form-container form label{
+    font-size: 1.5rem;
+}
+.login-form-container form .btn{
+    display: block;
+    width: 100%;
+}
+.login-form-container form p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: rgb(220, 23, 40);
+}
+.login-form-container form p a{
+    color: blue;
+}
+.login-form-container form p a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.login-form-container #form-close{
+    position: absolute;
+    top:2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color:#f40909;
+    cursor: pointer;
+
+}*/
+section{
+    padding:2rem 9%
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h3{
+    padding-top: 20rem;
+    font-size: 4.5rem;
+    color: rgb(248, 252, 247);
+    text-transform: uppercase;
+    text-shadow: 0 .3rem 5rem rgb(240, 240, 240);
+
+}
+.home .content p{
+    font-size: 2.5rem;
+    color: #5cee19;
+    padding: .5rem 0;
+}
+.btn{
+    
+    font-size: 2rem;
+    box-sizing: 10rem;
+    background-color: rgb(250, 73, 9);
+    cursor: pointer;
+}
+.btn:hover{
+    color: crimson;
+    background-color: rgb(213, 110, 14);
+}
+
+.home .video-container video{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    height: 69.5rem;
+    width: 100%;
+    object-fit: cover;
+
+}/*
+.home .controls{
+    padding: .1rem;
+    border-radius: 3rem;
+    background: rgb(30, 30, 30);
+    position: relative;
+    top: 20rem;
+}
+.home .controls .vid-btn{
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    border-radius: 10%;
+    cursor: pointer;
+    margin: 0.5rem;
+    background: white;
+   
+
+}
+
+.home .controls .vid-btn.active{
+   background-color: tomato;
+}*/
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading span{
+        font-size :2.5rem;
+    }
+}
+
+.heading{
+    padding-top: 13%;
+    text-align: center;
+   
+
+}
+.heading span{
+    font-size: 3.5rem;
+    background: yellow;
+    color: rgb(255, 77, 0);
+    border-radius: 1rem;
+    padding: .2rem 1rem;
+}
+
+.heading span .space{
+    background: none;
+    
+}
